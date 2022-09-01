@@ -1,15 +1,11 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}body{
+body{
     background-color: beige;
     scrollbar-color: black;
     scroll-behavior: none;
 }
 .container{
-    padding: 1rem;
-    max-width: 750px;
+    padding: 0.7rem;
+    max-width: 650px;
     text-align: center;
     background-color: black;
     color: aliceblue;
