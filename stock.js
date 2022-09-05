@@ -20,12 +20,12 @@ function validateInputs(){
     else if(cp>sp){
         var loss = Math.abs(((cp-sp)*stockq).toFixed(3))
         var lossPer = Math.abs((((cp-sp)*100)/cp).toFixed(3));
-        showResult.innerText = "You are in Loss!\n Your loss  percentage is: "+lossPer+"%  .\n But don't worry keep Pateince.."
+        showResult.innerText = "You are in Loss!\nYour total loss is:"+loss + "\nYour loss  percentage is: "+lossPer+"%  .\n But don't worry keep Pateince.."
        
     }else if (sp>cp){
         var profit = Math.abs(((sp-cp)*stockq).toFixed(3));
         var profitPer = Math.abs((((sp-cp)*100)/cp).toFixed(3));
-        showResult.innerText = "Great you are  in Profit!\n Your profit percentage is: "+profitPer+"%  \n Party to banti hai";
+        showResult.innerText = `Great you are  in Profit!\nYour total Profit is:${profit}\nYour profit percentage is: ${profitPer}%  \n Party to banti hai`;
     }else {
         showResult.innerText="No Profit No Loss "
     }
